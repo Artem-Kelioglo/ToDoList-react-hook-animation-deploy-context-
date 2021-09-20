@@ -13,6 +13,7 @@ export const AlertState = ({ children }) => {
     })
   }
 
+  
   const hide=()=>dispatch({type:HIDE_ALERT})
   return (
     <AlertContext.Provider value={{show,hide,alert:state}}>
