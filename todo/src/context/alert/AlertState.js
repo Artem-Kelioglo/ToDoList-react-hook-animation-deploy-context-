@@ -5,6 +5,7 @@ import {alertReducer} from './alertReducer'
 
 export const AlertState = ({ children }) => {
   const [state, dispatch] = useReducer(alertReducer, { visible: false })
+
   
   const show =(text, type = 'warning') => {
     dispatch({
