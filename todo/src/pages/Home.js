@@ -7,7 +7,7 @@ export const Home = () => {
     .fill('')
     .map((_,i)=>({id:i,title:`Note${i+1}`}))
   return (
-    <Fragment> 
+    <Fragment>  
       <Form />
       <hr />
       <Notes notes={notes}/>
